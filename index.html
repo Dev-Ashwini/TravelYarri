@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap/css link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="./bootstap/css/font_awesome-5.8.1.css">
+    <link rel="stylesheet" href="./bootstap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./bootstap/css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travellers</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-teal">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <i class="fa fa-plane-departure me-2"></i> Travellers</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#simplenavbar"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="simplenavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#search" class="nav-link">Search</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#places" class="nav-link">Visiting Spots</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider section-->
+    <section>
+      <div
+        class="carousel slide"
+        id="travel-slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+        hover:"pause";
+      >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#travel-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#travel-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#travel-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#travel-slide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#travel-slide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/bg6.jpg" alt="" class="img-fluid" w-100 />
+            <div class="carousel-caption">
+                <h5 class="display-4">Enjoy the Nature</h5>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta quibusdam eveniet accusamus eum nostrum necessitatibus, id numquam fuga at?</p>
+                <button class="btn btn-teal text-white">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/bg2.jpg" alt="" class="img-fluid" w-100 />
+            <div class="carousel-caption">
+                <h5 class="display-4">Most awaited Moment</h5>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta quibusdam eveniet accusamus eum nostrum necessitatibus, id numquam fuga at?</p>
+                <button class="btn btn-teal text-white">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/bg3.jpg" alt="" class="img-fluid" w-100 />
+            <div class="carousel-caption">
+                <h5 class="display-4">Feel the Nature</h5>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta quibusdam eveniet accusamus eum nostrum necessitatibus, id numquam fuga at?</p>
+                <button class="btn btn-teal text-white">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/bg3.jpg" alt="" class="img-fluid" w-100 />
+            <div class="carousel-caption">
+                <h5 class="display-4">SunRise</h5>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta quibusdam eveniet accusamus eum nostrum necessitatibus, id numquam fuga at?</p>
+                <button class="btn btn-teal text-white">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/bg5.jpg" alt="" class="img-fluid" w-100 />
+            <div class="carousel-caption">
+                <h5 class="display-4">Fun Time</h5>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta quibusdam eveniet accusamus eum nostrum necessitatibus, id numquam fuga at?</p>
+                <button class="btn btn-teal text-white">Read More</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#travel-slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#travel-slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </section>
+    <!-- search box -->
+    <section class="p-3 bg-teal text-white" id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="display-4">Search Your Destination</h5>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid exercitationem nam eaque aut, natus quod odio itaque perspiciatis incidunt assumenda dolores ea esse quisquam at fuga laboriosam. Ipsa molestiae fuga, eveniet rerum atque aspernatur incidunt sunt sapiente sequi voluptates nobis!</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <input type="search" class="form-control" placeholder="Paris">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`
+    <!-- cards -->
+    <section class="bg-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-location-arrow fa-4x text-teal"></i>
+                            <p class="h2">Pick Location</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ducimus dolor error recusandae, necessitatibus quas assumenda ex illum ea inventore!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-4x text-teal"></i>
+                            <p class="h2">Travel-Shop</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ducimus dolor error recusandae, necessitatibus quas assumenda ex illum ea inventore!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-plane-departure fa-4x text-teal"></i>
+                            <p class="h2">Fly & Cheel</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ducimus dolor error recusandae, necessitatibus quas assumenda ex illum ea inventore!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular places -->
+    <section class="p-3" id="places">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h5 class="display-3">
+                        <span class="text-teal">Popular</span> Places
+                    </h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore.</p>
+                </div>
+            </div>
+            <!-- image with card -->
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/card1.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Mysore</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat modi laudantium nostrum corporis perferendis et odit voluptas. Quo quod corrupti, ut dicta, totam a nihil eius, recusandae distinctio repudiandae ea!</p>
+                        <button class="btn btn-teal btn-sm text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/card2.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Pondicherry</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat modi laudantium nostrum corporis perferendis et odit voluptas. Quo quod corrupti, ut dicta, totam a nihil eius, recusandae distinctio repudiandae ea!</p>
+                        <button class="btn btn-teal btn-sm text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/card3.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Ooty</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat modi laudantium nostrum corporis perferendis et odit voluptas. Quo quod corrupti, ut dicta, totam a nihil eius, recusandae distinctio repudiandae ea!</p>
+                        <button class="btn btn-teal btn-sm text-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <button class="btn btn-dark btn-lg">
+                        <i class="fa fa-play me-2"></i>Start Booking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- social icon section -->
+    <section class="bg-teal p-3 text-white text-center" id="icons">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Follow Travellers</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, minima.</p>
+                    <i class="fab fa-facebook-square fa-3x me-3"></i>
+                    <i class="fab fa-youtube-square fa-3x me-3"></i>
+                    <i class="fab fa-twitter-square fa-3x me-3"></i>
+                    <i class="fab fa-google-plus-square fa-3x me-3"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Gallery section -->
+     <section class="p-3" id="gallery">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h5 class="display-4">
+                        <span class="text-teal">Photo</span> Gallery
+                    </h5>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, sint!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./images/1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/4.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <img src="./images/5.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/7.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/4.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <img src="./images/13.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/5.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/1.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- contact section -->
+     <section class="p-3" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mt-3">
+                        <div class="card-body bg-teal text-center text-white">
+                            <i class="fa fa-envelope fa-4x"></i>
+                            <h2>Contact for Booking</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro natus illo eos minima quam beatae, excepturi exercitationem nobis iste! Aperiam in placeat nam, provident eligendi doloremque nostrum numquam dicta nemo!</p>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h3>Location</h3>
+                        </li>
+                        <li class="list-group-item">
+                            Travellers Pvt. Ltd.
+                        </li>
+                        <li class="list-group-item">
+                            T.Nagar.Chennai
+                        </li>
+                        <li class="list-group-item">
+                            Chennai, Tamil-Nadu
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mt-3">
+                        <div class="card-header bg-teal text-white text-center">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div class="card-body bg-light">
+                            <form>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="number" class="form-control" placeholder="Mobile Number">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" placeholder="Loved Destination">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea rows="5" class="form-control" placeholder="Your Experience"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- main footer -->
+     <footer class="p-3 bg-teal text-white text-center mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Copyright &copy; 2021, Travellers Pvt.Ltd</h4>
+                    <h6>All Rights Reserved</h6>
+                    <h6>Developed & Maintain by Ashwini Dapke</h6>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- Bootstrap JS link -->
+    <script src="./bootstap/js/bootstrap.js"></script>
+    <script src="./bootstap/js/mdb.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
